@@ -1,0 +1,25 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "3D立体式图片相册切换效果\n内含12张图片，通过鼠标切换视角\n-----------------------------------------------------------\n第一次迭代，增加了28张图片，一共40张图片。\n长廊为东西方向横向延伸，对比第一版，修改了再次点击图片回到原点的部分代码，点击图片之后垂直向后退750个像素(因为每次点击只改变x轴坐标，所以点击东西方向墙上的图片时，不会产生后退的效果)，模拟人们在展览馆中观看展品的事件。",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Anime" ],
+	"title" : "3D展览长廊",
+	"type" : "web",
+	"version" : 1,
+	"visibility" : "public",
+	"workshopid" : "2179153203"
+}
