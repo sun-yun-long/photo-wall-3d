@@ -1,25 +1,76 @@
 {
-	"contentrating" : "Everyone",
-	"description" : "3D立体式图片相册切换效果\n内含12张图片，通过鼠标切换视角\n-----------------------------------------------------------\n第一次迭代，增加了28张图片，一共40张图片。\n长廊为东西方向横向延伸，对比第一版，修改了再次点击图片回到原点的部分代码，点击图片之后垂直向后退750个像素(因为每次点击只改变x轴坐标，所以点击东西方向墙上的图片时，不会产生后退的效果)，模拟人们在展览馆中观看展品的事件。",
-	"file" : "index.html",
-	"general" : 
-	{
-		"properties" : 
-		{
-			"schemecolor" : 
-			{
-				"order" : 0,
-				"text" : "ui_browse_properties_scheme_color",
-				"type" : "color",
-				"value" : "0 0 0"
+	"contentrating": "Everyone",
+	"description": "【全新 3D 沉浸式现代深色奢华艺术展厅】\n基于 Three.js (WebGL) 现代引擎全新重构。\n- 包含 40 张精选艺术画作与精装立体黑金画框\n- 抛光大理石地面镜面反射与艺术射灯光影\n- 空气中缓缓漂浮的丁达尔微尘微粒\n- 待机电影感平滑自动巡游、鼠标视差与点击对焦特写\n- 键盘快捷键支持（←/→ 浏览切画，ESC 退出对焦）\n- 支持在侧边栏自定义巡游速度、地面反射强度、射灯色温与微尘开关。",
+	"file": "index.html",
+	"general": {
+		"properties": {
+			"schemecolor": {
+				"order": 0,
+				"text": "ui_browse_properties_scheme_color",
+				"type": "color",
+				"value": "0 0 0"
+			},
+			"autoCruise": {
+				"order": 1,
+				"text": "待机自动巡游 (Auto Cruise)",
+				"type": "bool",
+				"value": true
+			},
+			"cruiseSpeed": {
+				"order": 2,
+				"text": "漫游速度 (Cruise Speed)",
+				"type": "slider",
+				"min": 1,
+				"max": 10,
+				"step": 0.5,
+				"value": 4.5
+			},
+			"floorReflectivity": {
+				"order": 3,
+				"text": "大理石地面反射强度 (Floor Reflection)",
+				"type": "slider",
+				"min": 10,
+				"max": 100,
+				"step": 5,
+				"value": 65
+			},
+			"lightColorTemp": {
+				"order": 4,
+				"text": "展厅射灯色温 (Lighting Ambience)",
+				"type": "combo",
+				"options": [
+					{
+						"label": "典雅暖金 (Warm Gold)",
+						"value": "warm"
+					},
+					{
+						"label": "现代自然白 (Neutral White)",
+						"value": "neutral"
+					},
+					{
+						"label": "冷调现代 (Cool Modern)",
+						"value": "cool"
+					}
+				],
+				"value": "warm"
+			},
+			"enableDust": {
+				"order": 5,
+				"text": "丁达尔空气微尘粒子 (Floating Dust)",
+				"type": "bool",
+				"value": true
 			}
 		}
 	},
-	"preview" : "preview.jpg",
-	"tags" : [ "Anime" ],
-	"title" : "3D展览长廊",
-	"type" : "web",
-	"version" : 1,
-	"visibility" : "public",
-	"workshopid" : "2179153203"
+	"preview": "preview.jpg",
+	"tags": [
+		"Anime",
+		"Art",
+		"Relaxing"
+	],
+	"title": "3D 现代奢华艺术展厅 (Grand Gallery)",
+	"type": "web",
+	"version": 2,
+	"visibility": "public",
+	"workshopid": "2179153203"
 }
